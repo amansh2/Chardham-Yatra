@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/stay"
+    android:title="STAY"
+    android:icon="@drawable/ic_baseline_hotel_24"
+    app:showAsAction="always"/>
+    <item android:id="@+id/food"
+        android:title="FOOD"
+        android:icon="@drawable/ic_baseline_fastfood_24"
+        app:showAsAction="always"/>
+<item android:icon="@drawable/ic_baseline_location_on_24"
+    android:title="Location"
+    android:id="@+id/location"
+    app:showAsAction="always"/>
+</menu>

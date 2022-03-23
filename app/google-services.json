@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1084282831167",
+    "project_id": "chardham-tourism",
+    "storage_bucket": "chardham-tourism.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084282831167:android:524b45e0199f043300938a",
+        "android_client_info": {
+          "package_name": "com.example.chardhamyatra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084282831167-d47j4ks20t5dun6n3j9g057pj1u9m38v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVuIqBmoJHmGSLGa2TxUGvH4iFmdpSBpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084282831167-d47j4ks20t5dun6n3j9g057pj1u9m38v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

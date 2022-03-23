@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/choosing_page">
+
+    <fragment
+        android:id="@+id/charDhams"
+        android:name="com.example.chardhamyatra.Religious.CharDhams"
+        android:label="CharDhams"
+        tools:layout="@layout/fragment_char_dhams">
+        <action
+            android:id="@+id/action_charDhams_to_yamunotri"
+            app:destination="@id/yamunotri" />
+        <action
+            android:id="@+id/action_charDhams_to_gangotri"
+            app:destination="@id/gangotri" />
+        <action
+            android:id="@+id/action_charDhams_to_badrinath"
+            app:destination="@id/badrinath" />
+        <action
+            android:id="@+id/action_charDhams_to_kedarnath"
+            app:destination="@id/kedarnath" />
+        <action
+            android:id="@+id/action_charDhams_to_choosing_page"
+            app:destination="@id/choosing_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/gangotri"
+        android:name="com.example.chardhamyatra.Religious.Gangotri"
+        android:label="fragment_gangotri"
+        tools:layout="@layout/fragment_gangotri" >
+        <action
+            android:id="@+id/action_gangotri_to_charDhams"
+            app:destination="@id/charDhams" />
+    </fragment>
+    <fragment
+        android:id="@+id/kedarnath"
+        android:name="com.example.chardhamyatra.Religious.kedarnath"
+        android:label="fragment_kedarnath"
+        tools:layout="@layout/fragment_kedarnath" >
+        <action
+            android:id="@+id/action_kedarnath_to_charDhams"
+            app:destination="@id/charDhams" />
+    </fragment>
+    <fragment
+        android:id="@+id/yamunotri"
+        android:name="com.example.chardhamyatra.Religious.Yamunotri"
+        android:label="fragment_yamunotri"
+        tools:layout="@layout/fragment_yamunotri" >
+        <action
+            android:id="@+id/action_yamunotri_to_charDhams"
+            app:destination="@id/charDhams" />
+    </fragment>
+    <fragment
+        android:id="@+id/badrinath"
+        android:name="com.example.chardhamyatra.Religious.Badrinath"
+        android:label="fragment_badrinath"
+        tools:layout="@layout/fragment_badrinath" >
+        <action
+            android:id="@+id/action_badrinath_to_charDhams"
+            app:destination="@id/charDhams" />
+    </fragment>
+    <fragment
+        android:id="@+id/dehradun"
+        android:name="com.example.chardhamyatra.HillStations.Dehradun"
+        android:label="fragment_dehradun"
+        tools:layout="@layout/fragment_dehradun" >
+        <action
+            android:id="@+id/action_dehradun_to_hillsList"
+            app:destination="@id/hillsList" />
+    </fragment>
+    <fragment
+        android:id="@+id/masoori"
+        android:name="com.example.chardhamyatra.HillStations.Masoori"
+        android:label="fragment_masoori"
+        tools:layout="@layout/fragment_masoori" >
+        <action
+            android:id="@+id/action_masoori_to_hillsList"
+            app:destination="@id/hillsList" />
+    </fragment>
+    <fragment
+        android:id="@+id/nanital"
+        android:name="com.example.chardhamyatra.HillStations.Nanital"
+        android:label="fragment_nanital"
+        tools:layout="@layout/fragment_nanital" >
+        <action
+            android:id="@+id/action_nanital_to_hillsList"
+            app:destination="@id/hillsList" />
+    </fragment>
+    <fragment
+        android:id="@+id/hillsList"
+        android:name="com.example.chardhamyatra.HillStations.HillsList"
+        android:label="fragment_hills_list"
+        tools:layout="@layout/fragment_hills_list" >
+        <action
+            android:id="@+id/action_hillsList_to_dehradun"
+            app:destination="@id/dehradun" />
+        <action
+            android:id="@+id/action_hillsList_to_masoori"
+            app:destination="@id/masoori" />
+        <action
+            android:id="@+id/action_hillsList_to_nanital"
+            app:destination="@id/nanital" />
+        <action
+            android:id="@+id/action_hillsList_to_choosing_page"
+            app:destination="@id/choosing_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/kuaripass"
+        android:name="com.example.chardhamyatra.trekking.kuaripass"
+        android:label="kuaripass" />
+    <fragment
+        android:id="@+id/waterList"
+        android:name="com.example.chardhamyatra.waterSports.waterList"
+        android:label="fragment_water_list"
+        tools:layout="@layout/fragment_water_list" >
+        <action
+            android:id="@+id/action_waterList_to_rishikesh"
+            app:destination="@id/rishikesh" />
+        <action
+            android:id="@+id/action_waterList_to_nanital1"
+            app:destination="@id/nanital1" />
+        <action
+            android:id="@+id/action_waterList_to_choosing_page"
+            app:destination="@id/choosing_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/nanital1"
+        android:name="com.example.chardhamyatra.waterSports.Nanital1"
+        android:label="fragment_nanital1"
+        tools:layout="@layout/fragment_nanital1" >
+        <action
+            android:id="@+id/action_nanital1_to_waterList"
+            app:destination="@id/waterList" />
+    </fragment>
+    <fragment
+        android:id="@+id/rishikesh"
+        android:name="com.example.chardhamyatra.waterSports.Rishikesh"
+        android:label="fragment_rishikesh"
+        tools:layout="@layout/fragment_rishikesh" >
+        <action
+            android:id="@+id/action_rishikesh_to_waterList2"
+            app:destination="@id/waterList" />
+    </fragment>
+    <fragment
+        android:id="@+id/choosing_page"
+        android:name="com.example.chardhamyatra.choosing_page"
+        android:label="fragment_choosing_page"
+        tools:layout="@layout/fragment_choosing_page" >
+        <action
+            android:id="@+id/action_choosing_page_to_charDhams"
+            app:destination="@id/charDhams" />
+        <action
+            android:id="@+id/action_choosing_page_to_hillsList"
+            app:destination="@id/hillsList" />
+        <action
+            android:id="@+id/action_choosing_page_to_waterList"
+            app:destination="@id/waterList" />
+        <action
+            android:id="@+id/action_choosing_page_to_hillsList2"
+            app:destination="@id/hillsList" />
+        <action
+            android:id="@+id/action_choosing_page_to_kuaripass"
+            app:destination="@id/kuaripass" />
+    </fragment>
+</navigation>

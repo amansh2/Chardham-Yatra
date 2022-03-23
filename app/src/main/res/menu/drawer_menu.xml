@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="Home"
+    android:icon="@drawable/ic_baseline_home_24"
+    android:id="@+id/charDhams"/>
+
+<item android:title="More Info(Website)"
+    android:onClick="website"
+    android:icon="@drawable/ic_baseline_info_24"/>
+    <item android:title="Medical Advice"
+        android:icon="@drawable/ic_baseline_medical_services_24"
+        android:onClick="medication"/>
+<item android:title="Contact"
+    android:icon="@drawable/ic_baseline_contact_phone_24"
+    android:onClick="contact"/>
+    <item android:title="Routes(pdf)"
+        android:icon="@drawable/ic_baseline_picture_as_pdf_24"
+        android:onClick="pdf"/>
+    <item android:title="Logout"
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:onClick="logout"/>
+
+</menu>
