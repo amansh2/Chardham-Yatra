@@ -2,7 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 <item android:title="Home"
     android:icon="@drawable/ic_baseline_home_24"
-    android:id="@+id/charDhams"/>
+    android:id="@+id/choosing_page"/>
+    <item android:title="Tourist Guides"
+        android:id="@+id/guides"
+        android:onClick="TouristGuidePage"
+        android:icon="@drawable/baseline_emoji_people_24"/>
 
 <item android:title="More Info(Website)"
     android:onClick="website"
@@ -16,6 +20,10 @@
     <item android:title="Routes(pdf)"
         android:icon="@drawable/ic_baseline_picture_as_pdf_24"
         android:onClick="pdf"/>
+    <item android:title="IMGtoTXT"
+        android:icon="@drawable/ic_baseline_camera_front_24"
+        android:onClick="imagetoText"
+        />
     <item android:title="Logout"
         android:id="@+id/logout"
         android:icon="@drawable/logout"

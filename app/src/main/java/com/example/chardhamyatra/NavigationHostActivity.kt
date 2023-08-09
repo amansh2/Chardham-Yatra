@@ -11,7 +11,10 @@ import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.chardhamyatra.databinding.ActivityNavigationHostBinding
-import com.example.eventmanagement.AuthAppRepository
+import com.example.Authentication.AuthAppRepository
+import com.example.Authentication.MainActivity
+import com.example.TouristGuide.GuideDetailsActivity
+import com.example.TouristGuide.TouristGuideActivity
 
 class NavigationHostActivity : AppCompatActivity() {
     private lateinit var navController:NavController
@@ -23,13 +26,13 @@ class NavigationHostActivity : AppCompatActivity() {
         repository= AuthAppRepository(application)
         repository.getLoggedOutLiveData().observe(this,{
             if(it==true){
-                startActivity(Intent(this,MainActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
         })
+
         setContentView(binding.root)
         buildDrawerLayout(binding)
-
     }
 
     private fun buildDrawerLayout(binding: ActivityNavigationHostBinding) {
@@ -52,7 +55,7 @@ class NavigationHostActivity : AppCompatActivity() {
     }
     fun medication(item:MenuItem){
         startActivity(Intent(this,Medi::class.java))
-        Toast.makeText(this,"hello",Toast.LENGTH_SHORT).show()
+       // Toast.makeText(this,"hello",Toast.LENGTH_SHORT).show()
     }
     fun contact(item:MenuItem){
         val intent = Intent(Intent.ACTION_SEND).apply {
@@ -60,7 +63,7 @@ class NavigationHostActivity : AppCompatActivity() {
             putExtra(Intent.EXTRA_EMAIL, arrayOf("amanshdeep2@gmail.com"))
         }
         if (intent.resolveActivity(packageManager) != null) {
-            startActivity(intent)
+            startActivity(Intent.createChooser(intent,"Complete Action Through"))
         }
     }
     fun pdf(item: MenuItem){
@@ -68,4 +71,11 @@ class NavigationHostActivity : AppCompatActivity() {
         startActivity(Intent(Intent.ACTION_VIEW,uri))
     }
 
+    fun imagetoText(item: MenuItem){
+        startActivity(Intent(this,ImageToText::class.java))
+    }
+
+    fun TouristGuidePage(item: MenuItem){
+        startActivity(Intent(this,TouristGuideActivity::class.java))
+    }
 }

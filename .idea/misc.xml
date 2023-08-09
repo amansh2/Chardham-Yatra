@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/hp/AndroidStudioProjects/ChardhamYatra - Copy/app/src/main/res/drawable/ic_baseline_camera_front_24.xml" value="0.123" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/ChardhamYatra - Copy/app/src/main/res/layout/activity_image_to_text.xml" value="0.22" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/ChardhamYatra - Copy/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/ChardhamYatra - Copy/app/src/main/res/layout/activity_medi.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/ChardhamYatra - Copy/app/src/main/res/layout/activity_navigation_host.xml" value="0.17282051282051283" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/ChardhamYatra - Copy/app/src/main/res/layout/activity_register.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/ChardhamYatra - Copy/app/src/main/res/layout/fragment_char_dhams.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/ChardhamYatra - Copy/app/src/main/res/layout/fragment_choosing_page.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/ChardhamYatra - Copy/app/src/main/res/layout/fragment_dehradun.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/ChardhamYatra - Copy/app/src/main/res/layout/fragment_gangotri.xml" value="0.1" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/ChardhamYatra - Copy/app/src/main/res/layout/fragment_hills_list.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/ChardhamYatra - Copy/app/src/main/res/layout/fragment_kuaripass.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/ChardhamYatra - Copy/app/src/main/res/layout/fragment_masoori.xml" value="0.17552083333333332" />

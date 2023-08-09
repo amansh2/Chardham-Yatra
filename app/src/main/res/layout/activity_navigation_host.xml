@@ -17,7 +17,7 @@
         android:layout_height="match_parent"
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav_graph"
-        tools:layout="@layout/fragment_char_dhams"/>
+        tools:layout="@layout/fragment_choosing_page"/>
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"

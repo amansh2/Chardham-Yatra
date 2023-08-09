@@ -4,6 +4,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
@@ -13,22 +16,40 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ChardhamYatra">
         <activity
-            android:name=".Medi"
+            android:name="com.example.BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.TouristGuide.GuideDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.TouristGuide.GuideRegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.TouristGuide.TouristGuideActivity"
             android:exported="false" />
 
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ocr" />
+
         <activity
-            android:name=".RegisterActivity"
+            android:name=".ImageToText"
+            android:exported="false" />
+        <activity
+            android:name=".Medi"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Authentication.RegisterActivity"
             android:exported="false"
             android:label="@string/title_activity_register" />
         <activity
             android:name=".NavigationHostActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.Authentication.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
