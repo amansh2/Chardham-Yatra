@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/item_board_content_marginBottom"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/item_board_content_padding">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_board_image"
+                    android:layout_width="@dimen/item_board_image_size"
+                    android:layout_height="@dimen/item_board_image_size"
+                    android:contentDescription="@string/image_contentDescription"
+                    android:src="@drawable/ic_board_placeholder"
+                    app:civ_border_color="@color/primary_text_color"
+                    app:civ_border_width="@dimen/item_board_image_circular_border_width" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_board_name_layout_marginStart"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/guide_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/item_board_name_text_size"
+                tools:text="Guide Name" />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+
+                <RatingBar
+                    android:id="@+id/rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stepSize="0.1"
+                    android:isIndicator="true"
+                    android:max="5"
+                    android:theme="@style/RatingBar"
+                    />
+                <TextView
+                    android:id="@+id/users"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(1000)"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$200"
+                android:textSize="@dimen/item_board_name_text_size"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_board_divider_height"
+        android:layout_marginTop="@dimen/item_board_divider_marginTop"
+        android:background="@color/divider_color" />
+</LinearLayout>
